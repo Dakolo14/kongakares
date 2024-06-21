@@ -31,6 +31,7 @@
         overflow-y: scroll !important;
         scrollbar-width: none !important;
         -ms-overflow-style: none;
+        width: 100%;
       }
 
       .body::-webkit-scrollbar {
@@ -67,32 +68,72 @@
         align-items: center; /* Center vertically */
     }
 
-    .containerss {
+    .container {
         display: flex;
         align-items: center;
+        margin-top: 20px;
     }
 
     .header {
         font-size: 40px;
         font-weight: 600;
         text-align: center;
-        margin-bottom: 30px;
+        margin: 30px 0 10px;
     }
 
     .download {
         display: flex;
         margin-inline: auto;
         padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .category img:hover {
+      scale: 1.02;
+      transition: .5s;
     }
 
 
-    @media only screen and (max-width: 900px) and (min-width: 300px) {
-      .containerss {
-        flex-direction: column;
-        }
-        .left-side, .right-side {
+    @media only screen and (max-width: 700px) and (min-width: 300px) {
+      .left-side, .right-side {
+          width: 100%;
+          padding: 15px;
+          display: flex; /* Enable flexbox */
+          justify-content: center; /* Center horizontally */
+          align-items: center;
+      }
+
+      .container {
+        display: grid;
+        width: 100% !important;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .category {
+            display: grid;
             width: 100%;
-        }
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 0.5%;
+            grid-row-gap:1%;
+            padding: 4px;
+            margin-top: 4px;
+            line-height: 0%;
+      }
+
+      .download {
+        display: flex;
+        margin-inline: auto;
+        padding: 5px;
+        width: 96vw;
+        margin-bottom: 30px;
+      }
+
+      .header {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin: 15px 0 5px;
+      }
     }
   </style>
   <body>
@@ -113,70 +154,76 @@
 </html>
 
 
-<div class="containerss">
+
+
+<div>
+  <header>
+    <h2 class="header">Order Now</h2>
+  </header>
+  
+  <!--category-->
+  <div class="category">
+  
+  <div>
+    <a href="https://www.konga.com/search?search=KongaCaresFMCG">
+      <img src="2.png" alt="Groceries" style="width:100%" />
+    </a>
+  </div>
+  
+  
+  <div>
+    <a href="https://www.konga.com/search?search=KongaCaresPhonesandAccessories">
+      <img src="1.png" alt="Konga Cares Phones and Accessories" style="width:100%" />
+    </a>
+  </div>
+  
+  <div>
+    <a href="https://www.konga.com/search?search=KongaCaresComputing">
+      <img src="3.png" alt="Konga Cares Computing" style="width:100%" />
+    </a>
+  </div>
+  
+  <div>
+    <a href="https://www.konga.com/search?search=KongaCaresHomeandKitchen">
+      <img src="4.png" alt="Konga Cares Home and Kitchen" style="width:100%" />
+    </a>
+  </div>
+  
+  <div>
+    <a href="https://www.konga.com/search?search=KongaCaresElectronics">
+      <img src="5.png" alt="Konga Cares Electronics" style="width:100%" />
+    </a>
+  </div>
+  
+  <div>
+    <a href="https://www.konga.com/search?search=KongaCaresPower">
+      <img src="6.png" alt="Konga Cares Power" style="width:100%" />
+    </a>
+  </div>
+  
+  </div>
+</div>
+
+
+<div class="gaming">
+  <div class="container">
     <div class="left-side">
-        <img src="left-side.png" alt="">
+        <img src="left-side.png" style="width: 100%;">
     </div>
     <div class="right-side">
-        <img src="right-side.png" alt="">
+        <img src="right-side.png" width="100%">
     </div>
-</div>
-
-
-
-<header>
-    <h2 class="header">Order Now</h2>
-</header>
-
-<!--category-->
-<div class="category">
-
-  <div>
-    <a href="https://www.konga.com/search?search=MidYearGroceries">
-      <img src="1.png" alt="Groceries" style="width:100%" />
-    </a>
   </div>
-
-
-  <div>
-    <a href="https://www.konga.com/search?search=MidYearGamingHub">
-      <img src="2.png" alt="Gaming Hub" style="width:100%" />
-    </a>
-  </div>
-
-  <div>
-    <a href="https://www.konga.com/search?search=MidYearGamingHub">
-      <img src="3.png" alt="Gaming Hub" style="width:100%" />
-    </a>
-  </div>
-
-  <div>
-    <a href="https://www.konga.com/search?search=MidYearHomeRevamp">
-      <img src="4.png" alt="Home Revamp" style="width:100%" />
-    </a>
-  </div>
-
-  <div>
-    <a href="https://www.konga.com/search?search=MidYearTechBro">
-      <img src="5.png" alt="Tech Bro" style="width:100%" />
-    </a>
-  </div>
-
-  <div>
-    <a href="https://www.konga.com/search?search=MidYearMobile">
-      <img src="6.png" alt="Mobile Phones" style="width:100%" />
-    </a>
-  </div>
-
 </div>
 
 
 
 
-<!-- Summer Essentials -->
+
+<!-- Download Kongapay -->
 <div style="margin-top: 10px;">
   <div>
-        <a href="https://www.konga.com/search?search=MidYearSummerEssentials">
+        <a href="https://www.kongapay.com/">
           <img
             src="download.png"
             alt="Summer Essentials Banner"
